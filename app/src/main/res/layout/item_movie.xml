@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ff0000"
     >
 
     <ImageView
@@ -26,12 +27,12 @@
         android:layout_toEndOf="@+id/ivMovie"/>
 
     <TextView
+        android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination."
-        android:id="@+id/tvOverview"
         android:layout_below="@+id/tvTitle"
         android:layout_toEndOf="@+id/ivMovie"
+        android:text="Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination."
         tools:ignore="HardcodedText" />
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.example.ahtt_vp_feminin.myflicks;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
@@ -33,6 +34,11 @@ ArrayList<Movie> movies;
         movies = new ArrayList<>();
         movieadapter = new MovieArrayAdapter(this, movies);
         LvItems.setAdapter(movieadapter);
+        ActionBar actionBar = getSupportActionBar();
+        //Changing the toolbar logo
+        actionBar.setLogo(R.mipmap.ic_toolmovie);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         String Url = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
 
