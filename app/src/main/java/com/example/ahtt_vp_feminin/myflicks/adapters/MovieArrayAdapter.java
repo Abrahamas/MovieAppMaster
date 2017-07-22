@@ -36,6 +36,9 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
         super(context, R.layout.item_movie, movies);
     }
 
+    // Return an integer representing the type by fetching the enum type ordinal
+
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
